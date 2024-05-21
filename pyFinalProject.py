@@ -1,5 +1,5 @@
 '''
-Names: Jianzhuo Ye, Anderson Rivera
+Name: Jianzhuo Ye
 Start Date: 5/20/24
 End Date: TBD
 Description
@@ -18,5 +18,16 @@ def main():
         return GetLogin();
 
 def GetLogin():
-    global user, ps
+    global user, ps, file_path;
+    file_path = os.cwd();
+    filename = "logininfo.txt";
+    logorsign = request.form.get("lbl_starter");
+    if logorsign == "Sign_Up":
+        user = request.form.get("txt_signup_username");
+        ps = request.form.get("txt_signup_password");
+    else:
+        user = request.form.get("txt_login_username");
+        ps = request.form.get("txt_login_password");
+    userps = user + ps;
+    pythfile = open(
     

@@ -1,10 +1,11 @@
 <html>
 	<head>
 		<title>Log In Page</title>
+		<script src="login.js"></script>
 	</head>
 	<body>
 		<div id="div_login">
-			<label id="lbl_starter">Log_In</label>
+			<label id="lbl_starter">{{start_type}}</label>
 			<form method="POST">
 				<h1>Welcome to Log In</h1>
 				<p>Welcome Back! Log In with your existing account</p>
@@ -12,7 +13,7 @@
 				<input type="txt" id="txt_login_username"></input><br>
 				<label>Password: </label>
 				<input type="txt" id="txt_login_password"></input><br>
-				<button type="submit" id="btn_submit">Submit</button><br><br>
+				<button type="submit" id="btn_submit_LogIn">Submit</button><br><br>
 			</form>
 			<p>Dont have an account?? Create One!</p>
 			<button type="button" id="btn_newacc">New Account</button>
@@ -21,13 +22,14 @@
 		
 		<div id="div_register">
 			<form method="post">
-				<label id="lbl_starter">Sing_In</label>
+				<label id="lbl_starter"></label>
 				<h1>Welcome to Sign Up!</h1>
 				<p>Create an account!<p>
 				<label>Username: </label>
 				<input type="text" id="txt_signin_username"></input><br>
 				<label>Password: </label>
 				<input type="text" id="txt_signin_password"></input><br><br>
+				<button type="submit" id="btn_submit_SignUp">Submit</button><br><br>
 				<p>Preexisting account??</p>
 				<button type="button" id="btn_login">Log In</button>
 			</form>

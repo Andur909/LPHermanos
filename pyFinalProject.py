@@ -6,7 +6,7 @@ Description
 '''
 import os.path
 from os import path
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
@@ -18,16 +18,19 @@ def main():
         return GetLogin();
 
 def GetLogin():
-    global user, ps, file_path;
-    file_path = os.cwd();
     filename = "logininfo.txt";
-    logorsign = request.form.get("lbl_starter");
-    if logorsign == "Sign_Up":
-        user = request.form.get("txt_signup_username");
-        ps = request.form.get("txt_signup_password");
+    logorsign = request.form['button']
+    if logorsign == "login":
+        user = request.form.get('txt_login_username');
+        ps = request.form.get('txt_login_password');
     else:
-        user = request.form.get("txt_login_username");
-        ps = request.form.get("txt_login_password");
+        user = request.form.get('txt_signin_username');
+        ps = request.form.get('txt_signin_username');
     userps = user + ps;
-    pythfile = open(
+    pythfile = open(filename,"r+");
+    storedinfo = pythfile.read();
+    if userps in storedinfo:
+        return redirect('/settings');
+    else:
+        errormsg = "Username or password is incorrect"
     

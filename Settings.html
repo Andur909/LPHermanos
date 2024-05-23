@@ -6,17 +6,17 @@
 			<h1>Welcome to settings</h1>
 			<p>Wou Will We Awle Wo Whance Awwress</p><br>
 			<label>Name: </label>
-			<input type="txt" id="txt_setting_name"></input><br>
+			<input type="txt" id="txt_setting_name"></input><label id="lbl_current_name">{{name}}</label><br>
 			<label>Last Name: </label>
-			<input type="txt" id="txt_setting_Lname"></input><br>
+			<input type="txt" id="txt_setting_Lname"></input><label id="lbl_current_Lname">{{Lname}}</label><br>
 			<label>Address Line 1: </label>
-			<input type="txt" id="txt_setting_addressL1"></input><br>
+			<input type="txt" id="txt_setting_addressL1"></input><label id="lbl_current_addressL1">{{AddressL1}}</label><br>
 			<label>Address Line 2: </label>
-			<input type="txt" id="txt_setting_addressL2"></input><br>
+			<input type="txt" id="txt_setting_addressL2"></input><label id="lbl_current_addressL2">{{AddressL2}}</label><br>
 			<label>City: </label>
-			<input type="txt" id="txt_setting_city"></input><br>
+			<input type="txt" id="txt_setting_city"></input><label id="lbl_current_city">{{city}}</label><br>
 			<label>ZipCode: </label>
-			<input type="txt" id="txt_setting_zipcode"></input><br>
+			<input type="txt" id="txt_setting_zipcode"></input><label id="lbl_current_zipcode">{{zipcode}}</label><br>
 			<label>State: </label>
 			<select id="cmb_state">
 				<option> </option>
@@ -27,7 +27,51 @@
 				<option>CO</option>
 				<option>CT</option>
 				<option>DE</option>
+				<option>DC</option>
+				<option>FL</option>
+				<option>GA</option>
+				<option>ID</option>
+				<option>IL</option>
+				<option>IN</option>
+				<option>IA</option>
+				<option>KS</option>
+				<option>KY</option>
+				<option>LA</option>
+				<option>ME</option>
+				<option>MD</option>
+				<option>MA</option>
+				<option>MI</option>
+				<option>MN</option>
+				<option>MS</option>
+				<option>MO</option>
+				<option>MT</option>
+				<option>NE</option>
+				<option>NV</option>
+				<option>NH</option>
+				<option>NJ</option>
+				<option>NM</option>
+				<option>NY</option>
+				<option>NC</option>
+				<option>ND</option>
+				<option>OH</option>
+				<option>OK</option>
+				<option>OR</option>
+				<option>PA</option>
+				<option>RI</option>
+				<option>SC</option>
+				<option>SD</option>
+				<option>TN</option>
+				<option>TX</option>
+				<option>UT</option>
+				<option>VT</option>
+				<option>VA</option>
+				<option>WA</option>
+				<option>WV</option>
+				<option>WI</option>
+				<option>WY</option>
 			</select>
+			<label>We dont ship to Alaska, Hawaii, and US territories.</label><label id="lbl_state"></label><br>
+			<button type="submit" id="btn_submit_Info" value="submit_info" name="button">Submit</button>
 		</div>
 	</body>
 </html>

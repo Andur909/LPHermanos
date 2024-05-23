@@ -33,6 +33,7 @@ def GetLogin():
     userps = user + ps;
     pythfile = open(filename,"r+");
     storedinfo = pythfile.read();
+    pythfile.close();
     if userps in storedinfo:
         if startup == "Sign_Up":
             return redirect('/settings');
@@ -47,17 +48,51 @@ def settingsMain():
     global filename;
     filename = "addressinfo.txt";
     info = [];
+    return settingsListen
+
+def settingsListen()
+    global info;
     if request.method == "GET":
         if startup == "Log_In":
-            pythfile=open(filename,"r+");
-            info = pythfile.readlines();
-            return render_template('Settings.html',data=info);
+            if settingstartup == "Change":
+                return render_template('Settings.html',startup=settingstartup);
+            else:
+                pythfile=open(filename,"r+");
+                info = pythfile.readlines();
+                pythfile.close();
+                #Add a way to differ between entries and match to user
+                return render_template('Settings.html',data=info);
         else:
-            return render_template('Settings.html');
+            if settingstartup == "Change":
+                return render_template('Settings.html',startup=settingstartup);#add {{startup on html}}
+            else:
+                return render_template('Settings.html');
     else:
         return settingsEnter();
 
 def settingsEnter():
-    
-    
-    
+    choice = request.form['button'];
+    switcher = {
+        "Submit": settingsSubmit,
+        "Cancel": settingsListen,
+        "Return": settingsReturn,
+        "Delete": settingsDelete,
+        "error": error
+        }
+    return switcher.get(choice, "error")()
+
+def settingsSubmit():
+    global errormsg, startup, info
+    State = request.form.get("cmb_state")
+    if State == "":
+        errormsg = "Please fill in all required fields";
+        settingstartup = "Change";
+        return settingsListen();
+    else:
+        FName = request.form.get("txt_setting_name");
+        LName = request.form.get("txt_setting_Lname");
+        Address = request.form.get("txt_setting_addressL1");
+        City = request.form.get("txt_setting_city");
+        ZipCode = request.form.get("txt_setting_zipcode");
+        info = [FName,LName,Address,City,ZipCode,State];
+        return settingsListen();

@@ -78,4 +78,39 @@ function Change_Check()
 		case 12:
 			New_State = "IL";
 			break;
+		case 13:
+			New_State = "IN";
+			break;
+		case 14:
+			New_State = "IA";
+			break;
+		case 15:
+			New_State = "KS";
+			break;
+		case 16:
+			New_State = "KY";
+			break;
+		case 17:
+			New_State = "LA";
+			break;
+		case 18:
+			New_State = "ME";
+			break;
+		case 19:
+			New_State = "MD";
+			break;
+		case 20:
+			New_State = "MA";
+			break;
+		case 21:
+			New_State = "MI";
+			break;
+		case 22:
+			New_State = "MN";
+			break;
+		case 23:
+			New_State = "MS";
+			break;
+			
+	}
 }

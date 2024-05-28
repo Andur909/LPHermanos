@@ -111,6 +111,83 @@ function Change_Check()
 		case 23:
 			New_State = "MS";
 			break;
-			
+		case 24:
+			New_State = "MO";
+			break;
+		case 25:
+			New_State = "MT";
+			break;
+		case 26:
+			New_State = "NE";
+			break;
+		case 27:
+			New_State = "NV";
+			break;
+		case 28:
+			New_State = "NH";
+			break;
+		case 29:
+			New_State = "NJ";
+			break;
+		case 30:
+			New_State = "NM";
+			break;
+		case 31:
+			New_State = "NY";
+			break;
+		case 32:
+			New_State = "NC";
+			break;
+		case 33:
+			New_State = "ND";
+			break;
+		case 34:
+			New_State = "OH";
+			break;
+		case 35:
+			New_State = "OK";
+			break;
+		case 36:
+			New_State = "OR";
+			break;
+		case 37:
+			New_State = "PA";
+			break;
+		case 38:
+			New_State = "RI";
+			break;
+		case 39:
+			New_State = "SC";
+			break;
+		case 40:
+			New_State = "SD";
+			break;
+		case 41:
+			New_State = "TN";
+			break;
+		case 42:
+			New_State = "TX";
+			break;
+		case 43:
+			New_State = "UT";
+			break;
+		case 44:
+			New_State = "VT";
+			break;
+		case 45:
+			New_State = "VA";
+			break;
+		case 46:
+			New_State = "WA";
+			break;
+		case 47:
+			New_State = "WV";
+			break;
+		case 48:
+			New_State = "WI";
+			break;
+		case 49:
+			New_State = "WY";
+			break;
 	}
 }

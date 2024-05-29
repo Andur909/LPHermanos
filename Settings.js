@@ -9,11 +9,14 @@ function Initial()
 	document.getElementById("txt_setting_city").addEventListener("keypress", Change_Check);
 	document.getElementById("txt_setting_zipcode").addEventListener("keypress", Change_Check);
 	document.getElementById("cmb_state").addEventListener("click", Change_Check);
+	
+	document.getElementById("btn_submit_Info").disabled = true;
 
 }
 
 function Check()
 {
+	//If User already has Address on
 	if (document.getElementById("lbl_new").value == "False")
 	{
 		name = document.getElementById("lbl_current_name").innerHTML;
@@ -36,6 +39,7 @@ function Check()
 
 function Change_Check()
 {
+	//If User changed anything
 	New_State_num = document,getElementById("cmb_state").selectedIndex;
 	switch(New_State_num)
 	{
@@ -189,5 +193,23 @@ function Change_Check()
 		case 49:
 			New_State = "WY";
 			break;
+	}
+	
+	Ac_Name = document.getElementById("txt_setting_name").value;
+	Ac_Lname = document.getElementById("txt_setting_Lname").value;
+	Ac_AddressL1 = document.getElementById("txt_setting_addressL1").value;
+	Ac_City = document.getElementById("txt_setting_city").value;
+	Ac_Zipcode = document.getElementById("txt_setting_zipcode").value;
+	
+	if (document.getElementById("lbl_new").value == "False")
+	{
+		if (Ac_Name != name && Ac_Lname != Lname && Ac_AddressL1 != AddressL1 && Ac_City != City && Ac_Zipcode != Zipcode && State != New_State && New_State != "N/A")
+		{
+			document.getElementById("btn_submit_Info").disabled = false;
+		} else {
+			alert("There must be a change");
+		}
+	} else {
+		
 	}
 }

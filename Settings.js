@@ -210,6 +210,12 @@ function Change_Check()
 			alert("There must be a change");
 		}
 	} else {
-		
+		if (Ac_Name != "" && Ac_Lname != "" && Ac_AddressL1 != "" && Ac_City != "" && Ac_Zipcode != "" && New_State != "N/A")
+		{
+			document.getElementById("cmb_state").value = New_State;
+			document.getElementById("btn_submit_Info").disabled = false;
+		} else {
+			alert("All parts must be filled out")
+		}
 	}
 }

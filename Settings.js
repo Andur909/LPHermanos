@@ -40,7 +40,7 @@ function Check()
 function Change_Check()
 {
 	//If User changed anything
-	New_State_num = document,getElementById("cmb_state").selectedIndex;
+	New_State_num = document.getElementById("cmb_state").selectedIndex;
 	switch(New_State_num)
 	{
 		case 0:
@@ -205,7 +205,7 @@ function Change_Check()
 	{
 		if (Ac_Name != name && Ac_Lname != Lname && Ac_AddressL1 != AddressL1 && Ac_City != City && Ac_Zipcode != Zipcode && State != New_State && New_State != "N/A")
 		{
-			document.getElementById("btn_submit_Info").disabled = false;
+			document.getElementById("btn_submit_Info").disabled = true
 		} else {
 			alert("There must be a change");
 		}
@@ -215,7 +215,7 @@ function Change_Check()
 			document.getElementById("cmb_state").value = New_State;
 			document.getElementById("btn_submit_Info").disabled = false;
 		} else {
-			alert("All parts must be filled out")
+			document.getElementById("btn_submit_Info").disabled = true;
 		}
 	}
 }

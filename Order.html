@@ -12,7 +12,7 @@
 		<div id="div_order">
 			<h1>Order Page</h1>
 			<div id="div_Chicken">
-				<h3>Select Your Chicken (Required)</h3>
+				<h3>Select Your Chicken (Required)</h3><br>
 				<select id="cmb_chicken">
 					<option> </option>
 					<option>RAW</option>
@@ -57,13 +57,7 @@
 					<h5>Price: $7.50 per lb</h5>
 				</div>
 				<div id="div_Chicken_Amount">
-					<div id="div_Chicken_minus">
-						<button type="button" id="btn_Chicken_minus">-</button>
-					</div>
-					<input type="text" id="txt_Chicken_amount"></input>
-					<div id="div_Chicken_Add">
-						<button type="button" id="btn_Chicken_add">+</button>
-					</div>
+					<input type="number" id="txt_Chicken_amount" name="txt_Chicken_Number"></input>
 				</div>
 				
 			</div>
@@ -113,13 +107,7 @@
 					<h5>Price: $3.00 per lb</h5>
 				</div>
 				<div id="div_Rice_Amount">
-					<div id="div_Rice_minus">
-						<button type="button" id="btn_Rice_minus">-</button>
-					</div>
-					<input type="text" id="txt_Rice_amount"></input>
-					<div id="div_Rice_Add">
-						<button type="button" id="btn_Rice_add">+</button>
-					</div>
+					<input type="number" id="txt_Rice_amount" name="txt_Rice_Number"></input>
 				</div>
 			</div>
 			<div id="div_Tortilla">
@@ -144,13 +132,7 @@
 					<h5>Price: $1.20 per lb</h5>
 				</div>
 				<div id="div_Tortilla_Amount">
-					<div id="div_Tortilla_minus">
-						<button type="button" id="btn_Tortilla_minus">-</button>
-					</div>
-					<input type="text" id="txt_Tortilla_amount"></input>
-					<div id="div_Totilla_Add">
-						<button type="button" id="btn_Tortilla_add">+</button>
-					</div>
+					<input type="number" id="txt_Tortilla_amount" name="txt_Tortilla_Number"></input>
 				</div>
 			</div>
 			<div id="div_Drink">
@@ -193,13 +175,7 @@
 					<h5>Price: $11 per 6-pack can</h5>
 				</div>
 				<div id="div_Drink_Amount">
-					<div id="div_Drink_minus">
-						<button type="button" id="btn_Drink_minus">-</button>
-					</div>
-					<input type="text" id="txt_Drink_amount"></input>
-					<div id="div_Drink_Add">
-						<button type="button" id="btn_Drink_add">+</button>
-					</div>
+					<input type="number" id="txt_Drink_amount" name="txt_Drink_Number"></input>
 				</div>
 			</div>
 			<div id="div_Combo">
@@ -228,31 +204,20 @@
 					<h5>Price: $18 per combo</h5>
 				</div>
 				<div id="div_Combo_Amount">
-					<div id="div_Combo_minus">
-						<button type="button" id="btn_Combo_minus">-</button>
-					</div>
-					<input type="text" id="txt_Combo_amount"></input>
-					<div id="div_Combo_Add">
-						<button type="button" id="btn_Combo_add">+</button>
-					</div>
+					<input type="number" id="txt_Combo_amount" name="txt_Combo_Number"></input>
 				</div>
 			</div>
 			<div id="div_order_submit">
-				<button type="submit" id="btn_Order_Submit">Next</button>
+				<button type="submit" id="btn_Order_Submit" name="btn_Order_Receipt">Next</button>
 			</div>
 		</div>
 		<div id="div_hidden">
 			<p>Contains all the info that will be given to the computer</p>
 			<label name="Chicken_Type" id="lbl_Chicken_Type"></label>
-			<label name="Chicken_Amount" id="lbl_Chicken_Amount"></label>
 			<label name="Rice_Type" id="lbl_Rice_Type"></label>
-			<label name="Rice_Amount" id="lbl_Rice_Amount"></label>
 			<label name="Tortilla_Type" id="lbl_Tortilla_Type"></label>
-			<label name="Tortilla_Amount" id="lbl_Tortilla_Amount"></label>
 			<label name="Drink_Type" id="lbl_Drink_Type"></label>
-			<label name="Drink_Amount" id="lbl_Drik_Amount"></label>
 			<label name="Combo_Type" id="lbl_Combo_Type"></label>
-			<label name="Combo_Amount" id="lbl_Combo_Amount"></label>
 		</div>
 	</body>
 </html>

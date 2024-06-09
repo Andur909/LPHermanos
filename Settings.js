@@ -12,6 +12,7 @@ function Initial()
 	
 	document.getElementById("btn_submit_Info").disabled = true;
 
+
 }
 
 function Check()

@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Darker background for the top and bottom sections */
+#div_order_top, #div_no_refund {
+    background-color: #8b6b61; /* Darker shade */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#div_order_top h1, #div_no_refund p {
+    margin: 0;
+}
+
+/* Light beige background for the center section */
+#div_order {
+    background-color: #f5f5dc; /* Light beige */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+#div_order_submit {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#btn_Order_Submit {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Ensure all images have the same fixed size for uniformity */
+img {
+    width: 200px;  /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the given size */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Fixed height for content to prevent layout shift */
+div[id^="div_"] > div {
+    height: 200px; /* Set a fixed height for image and text containers */
+    overflow: hidden;
+}
+
+/* Specific div styling for better spacing and alignment */
+div[id^="div_"] {
+    margin-bottom: 20px;
+    text-align: center;
+}

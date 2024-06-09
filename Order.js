@@ -9,12 +9,14 @@ function Sensor()
 		document.getElementById("cmb_rice").addEventListener("click", Rice_Change);
 		document.getElementById("cmb_Tortilla").addEventListener("click", Tortilla_Change);
 		document.getElementById("div_Combo").addEventListener("click", Combo_Change);
+		
+		document.getElementById("btn_Order_Submit").addEventListener("click", Next);
 }
 
 ///Sets and hides/Prepares all the information
 function Setter()
 {
-	//document.getElementById("div_hidden").style.display = "none";
+	document.getElementById("div_hidden").style.display = "none";
 	document.getElementById("div_order_submit").style.display = "none";
 	
 	///Chicken
@@ -56,15 +58,17 @@ function Setter()
 	
 	//Hidden
 	document.getElementById("lbl_Chicken_Type").innerHTML = "N/A";
-	document.getElementById("lbl_Chicken_Amount").innerHTML = "N/A";
 	document.getElementById("lbl_Rice_Type").innerHTML = "N/A";
-	document.getElementById("lbl_Rice_Amount").innerHTML = "N/A";
 	document.getElementById("lbl_Tortilla_Type").innerHTML = "N/A";
-	document.getElementById("lbl_Tortilla_Amount").innerHTML = "N/A";
 	document.getElementById("lbl_Drink_Type").innerHTML = "N/A";
-	document.getElementById("lbl_Drik_Amount").innerHTML = "N/A";
 	document.getElementById("lbl_Combo_Type").innerHTML = "N/A";
-	document.getElementById("lbl_Combo_Amount").innerHTML = "N/A";
+	
+	document.getElementById("txt_Chicken_amount").value = 0;
+	document.getElementById("txt_Rice_amount").value = 0;
+	document.getElementById("txt_Tortilla_amount").value = 0;
+	document.getElementById("txt_Drink_amount").value = 0;
+	document.getElementById("txt_Combo_amount").value = 0;
+	
 }
 
 //Chicken
@@ -411,4 +415,13 @@ function Combo_Change()
 			document.getElementById("div_Combo_MineralWater").style.display = "block";
 			break;
 	}
+}
+
+function Next()
+{
+		Chick_Amount = document.getElementById("txt_Chicken_amount").value;
+		if (Chick_Amount <= 0)
+		{
+			alert("You Must Select At least 1 chicken");
+		}
 }

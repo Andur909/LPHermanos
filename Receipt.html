@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Receipt</title>
+    <link rel="stylesheet" href="Receipt.css">
+</head>
+<body>
+    <div id="div_order_top">
+        <h1>Your Order Receipt</h1>
+    </div>
+
+    <div id="div_order">
+        <h2>Order Details</h2>
+        <ul>
+            <li>Chicken: {{chicken}} {{chicken_Amount}} lbs</li>
+            <li>Rice: {{Rice}} {{Rice_Amount}} lbs)</li>
+            <li>Tortilla: {{Tortilla}} {{tortilla_amount}} pieces</li>
+            <li>Drink: {{drink}} {{drink_amount}} cans</li>
+            <li>Combo: {{combo }} {{combo_amount }} units</li>
+        </ul>
+		<h4>Total: {{Money}}</h4>
+    </div>
+	<button type="submit" id="btn_LogIn" name="button">Begining</button>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+#div_order_top, #div_no_refund {
+    background-color: #8b6b61; 
+    color: white;
+    text-align: center;
+    padding: 20px; 
+}
+
+#div_order_top h1, #div_no_refund p {
+    margin: 0; 
+}
+
+#div_order {
+    background-color: #f5f5dc; 
+    padding: 40px;
+    display: flex;
+    justify-content: center; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px; 
+    vertical-align: top; /
+    text-align: center; 
+    height: 300px; 
+}
+
+#div_order_submit {
+    text-align: center;
+    margin: 20px 0; 
+}
+
+#btn_Order_Submit {
+    padding: 10px 20px; 
+    font-size: 16px; 
+}
+
+img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+#div_Chicken_Amount, #div_Rice_Amount, #div_Tortilla_Amount, #div_Drink_Amount, #div_Combo_Amount,
+#div_Chicken, #div_Rice, #div_Tortilla, #div_Drink, #div_Combo {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#div_Chicken_All, #div_Chicken_Raw, #div_Chicken_HotHoney, #div_Chicken_LemonPepper, #div_Chicken_GarlicParmejan, #div_Chicken_Buffalo, #div_Chicken_Cajun,
+#div_Rice_All, #div_Rice_Brown, #div_Rice_White, #div_Rice_Black, #div_Rice_Bastami, #div_Rice_Fried, #div_Rice_Egg,
+#div_Tortilla_All, #div_Tortilla_Corn, #div_Tortilla_Flour,
+#div_Drink_All, #div_Drink_BocaCola, #div_Drink_HermanoSprint, #div_Drink_DrHermano, #div_Drink_MountainPollo, #div_Drink_WalterSpecial,
+#div_Combo_All, #div_Combo_EggFried, #div_Combo_RawChicken, #div_Combo_MineralWater {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+#cmb_chicken, #cmb_rice, #cmb_Tortilla, #cmb_Drink, #cmb_Combo {
+    width: 150px; 
+    padding: 5px; 
+    margin: 0 auto; 
+    display: block;
+}

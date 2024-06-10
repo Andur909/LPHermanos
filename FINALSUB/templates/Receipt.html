@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Receipt</title>
+    <link rel="stylesheet" href="/static/Receipt.css">
+    <script src="/static/Receipt.js"></script>
+</head>
+<body>
+    <div id="div_order_card">
+        <form method="post">
+            <label id="lbl_mode">{{mode}}</label>
+        
+            <h1 id="heading">Enter your Payment information</h1>
+            <label id="lbl_disclaimer">Disclaimer: We only accept 16 digit cards</label><br>
+            <label id="lbl_card">Card Number</label>
+            <input type='number' id="txt_card" name="CardNum" placeholder="1234567890123456"><br>
+            
+            <label id="lbl_expiration">Expiration Date</label>
+            <input type='number' placeholder="MM" id="txt_month" name="month">
+            <input type='number' placeholder="YY" id="txt_year" name="year"><br>
+            
+            <label id="lbl_security">Security Code</label>
+            <input type='number' placeholder="CVV/CVC" id="txt_security" name="security"><br>
+            
+            <label id="lbl_zip">Zip Code</label>
+            <input type='number' placeholder="12345" id="txt_zip" name="zip"><br>
+            <label id="error_message" name="error_message">{{error}}</label>
+            <button type="submit" id="btn_submit_payment" value="payment" name="button">Submit</button>
+        </form>
+    </div>
+    <div id="div_order_top">
+        <h1>Your Order Receipt</h1>
+    </div>
+
+    <div id="div_order_bottom">
+        <h2>Order Details</h2>
+        Address: {{address}}
+        <ul>
+            <li>Chicken: {{chicken}} {{chicken_Amount}} lbs</li>
+            <li>Rice: {{Rice}} {{Rice_Amount}} lbs</li>
+            <li>Tortilla: {{tortilla}} {{tortilla_amount}} pieces</li>
+            <li>Drink: {{drink}} {{drink_amount}} cans</li>
+            <li>Combo: {{combo}} {{combo_amount}} units</li>
+        </ul>
+        <h4>Total: ${{Money}}</h4>
+    </div>
+	   <a href="/"><button type="button" id="btn_LogOut" name="button">Log Out</button></a>
+  
+</body>
+</html>

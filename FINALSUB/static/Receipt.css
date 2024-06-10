@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#lbl_disclaimer {
+    font-size: 10px;
+}
+
+#div_order_card {
+    background-color: #f5f5dc; 
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+#div_order_card label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#div_order_card input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#div_order_card button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8b6b61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#div_order_top, #heading {
+    background-color: #8b6b61; 
+    color: white;
+    text-align: center;
+    padding: 20px; 
+    margin-bottom: 20px;
+}
+
+#div_order_top h1, #heading {
+    margin: 0;
+}
+
+#div_order_bottom {
+    background-color: #f5f5dc; 
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+#div_order_bottom h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#div_order_bottom ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+#div_order_bottom li {
+    margin: 10px 0;
+}
+
+#div_order_bottom h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#btn_LogOut {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8b6b61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

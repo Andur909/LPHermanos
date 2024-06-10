@@ -11,7 +11,13 @@ function Initial()
 	document.getElementById("cmb_state").addEventListener("click", Change_Check);
 	
 	document.getElementById("btn_submit_Info").disabled = true;
-
+    document.getElementById("lbl_current_name").style.display = "none";
+    document.getElementById("lbl_current_Lname").style.display = "none";
+    document.getElementById("lbl_current_addressL1").style.display = "none";
+    document.getElementById("lbl_current_city").style.display = "none";
+    document.getElementById("lbl_current_zipcode").style.display = "none";
+    document.getElementById("lbl_state").style.display = "none";
+    
 }
 
 function Check()
@@ -38,7 +44,7 @@ function Check()
 function Change_Check()
 {
 	//If User changed anything
-	New_State_num = document,getElementById("cmb_state").selectedIndex;
+	New_State_num = document.getElementById("cmb_state").selectedIndex;
 	switch(New_State_num)
 	{
 		case 0:
@@ -204,16 +210,12 @@ function Change_Check()
 		if (Ac_Name != name && Ac_Lname != Lname && Ac_AddressL1 != AddressL1 && Ac_City != City && Ac_Zipcode != Zipcode && State != New_State && New_State != "N/A")
 		{
 			document.getElementById("btn_submit_Info").disabled = false;
-		} else {
-			alert("There must be a change");
 		}
 	} else {
 		if (Ac_Name != "" && Ac_Lname != "" && Ac_AddressL1 != "" && Ac_City != "" && Ac_Zipcode != "" && New_State != "N/A")
 		{
 			document.getElementById("cmb_state").value = New_State;
 			document.getElementById("btn_submit_Info").disabled = false;
-		} else {
-			alert("All parts must be filled out")
 		}
 	}
 }

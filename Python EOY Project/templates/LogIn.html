@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Log In Page</title>
-		<link rel="stylesheet" href="/static/LogIn.css"></link>
+		<link rel="stylesheet" href="/static/LogIn.css">
 		<script src="/static/login.js"></script>
 	</head>
 	<body>
@@ -11,9 +11,9 @@
 				<h1>Welcome to Log In</h1>
 				<p>Welcome Back! Log In with your existing account</p>
 				<label>Username: </label>
-				<input id="txt_login_username" name="txt_login_username"><br>
+				<input type='text' id="txt_login_username" name="txt_login_username"><br>
 				<label>Password: </label>
-				<input id="txt_login_password" name="txt_login_password"><br>
+				<input type='password' id="txt_login_password" name="txt_login_password"><br>
 				<button type="submit" id="btn_submit_LogIn" value="login" name="button">Submit</button><br><br>
 				<label id="loginerror">{{error_start}}</label>
 			</form>
@@ -26,9 +26,9 @@
 				<h1>Welcome to Sign Up!</h1>
 				<p>Create an account!<p>
 				<label>Username: </label>
-				<input id="txt_signin_username" name="txt_signin_username"><br>
+				<input type='text' id="txt_signin_username" name="txt_signin_username"><br>
 				<label>Password: </label>
-				<input id="txt_signin_password" name="txt_signin_password"><br><br>
+				<input type='password' id="txt_signin_password" name="txt_signin_password"><br><br>
 				<button type="submit" id="btn_submit_SignUp" value="signup" name="button">Submit</button><br><br>
 				<label id="loginerror">{{error_start}}</label>
 			</form>

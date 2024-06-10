@@ -57,11 +57,11 @@ function Setter()
 	document.getElementById("div_Combo_Amount").style.display = "none";
 	
 	//Hidden
-	document.getElementById("lbl_Chicken_Type").innerHTML = "N/A";
-	document.getElementById("lbl_Rice_Type").innerHTML = "N/A";
-	document.getElementById("lbl_Tortilla_Type").innerHTML = "N/A";
-	document.getElementById("lbl_Drink_Type").innerHTML = "N/A";
-	document.getElementById("lbl_Combo_Type").innerHTML = "N/A";
+	document.getElementById("lbl_Chicken_Type").value = "N/A";
+	document.getElementById("lbl_Rice_Type").value = "N/A";
+	document.getElementById("lbl_Tortilla_Type").value = "N/A";
+	document.getElementById("lbl_Drink_Type").value = "N/A";
+	document.getElementById("lbl_Combo_Type").value = "N/A";
 	
 	document.getElementById("txt_Chicken_amount").value = 0;
 	document.getElementById("txt_Rice_amount").value = 0;
@@ -87,7 +87,7 @@ function Chicken_Change()
 				document.getElementById("div_Chicken_Cajun").style.display = "none";
 				
 				document.getElementById("div_Chicken_Amount").style.display = "none";
-				document.getElementById("lbl_Chicken_Type").innerHTML = "N/A";
+				document.getElementById("lbl_Chicken_Type").value = "N/A";
 				document.getElementById("div_order_submit").style.display = "none";
 				break;
 			case 1:
@@ -100,7 +100,7 @@ function Chicken_Change()
 				document.getElementById("div_Chicken_Cajun").style.display = "none";
 				
 				document.getElementById("div_Chicken_Amount").style.display = "block";
-				document.getElementById("lbl_Chicken_Type").innerHTML = "Raw";
+				document.getElementById("lbl_Chicken_Type").value = "Raw";
 				document.getElementById("div_order_submit").style.display = "block";
 				break;
 			case 2:
@@ -113,7 +113,7 @@ function Chicken_Change()
 				document.getElementById("div_Chicken_Cajun").style.display = "none";
 				
 				document.getElementById("div_Chicken_Amount").style.display = "block";
-				document.getElementById("lbl_Chicken_Type").innerHTML = "Hot Honey";
+				document.getElementById("lbl_Chicken_Type").value = "Hot Honey";
 				document.getElementById("div_order_submit").style.display = "block";
 				break;
 			case 3:
@@ -126,7 +126,7 @@ function Chicken_Change()
 				document.getElementById("div_Chicken_Cajun").style.display = "none";
 				
 				document.getElementById("div_Chicken_Amount").style.display = "block";
-				document.getElementById("lbl_Chicken_Type").innerHTML = "Lemon Pepper";
+				document.getElementById("lbl_Chicken_Type").value = "Lemon Pepper";
 				document.getElementById("div_order_submit").style.display = "block";
 				break;
 			case 4:
@@ -139,7 +139,7 @@ function Chicken_Change()
 				document.getElementById("div_Chicken_Cajun").style.display = "none";
 				
 				document.getElementById("div_Chicken_Amount").style.display = "block";
-				document.getElementById("lbl_Chicken_Type").innerHTML = "Garlic Parmesan";
+				document.getElementById("lbl_Chicken_Type").value = "Garlic Parmesan";
 				document.getElementById("div_order_submit").style.display = "block";
 				break;
 			case 5:
@@ -152,7 +152,7 @@ function Chicken_Change()
 				document.getElementById("div_Chicken_Cajun").style.display = "none";
 				
 				document.getElementById("div_Chicken_Amount").style.display = "block";
-				document.getElementById("lbl_Chicken_Type").innerHTML = "Buffalo";
+				document.getElementById("lbl_Chicken_Type").value = "Buffalo";
 				document.getElementById("div_order_submit").style.display = "block";
 				break;
 			case 6:
@@ -165,7 +165,7 @@ function Chicken_Change()
 				document.getElementById("div_Chicken_Cajun").style.display = "block";
 				
 				document.getElementById("div_Chicken_Amount").style.display = "block";
-				document.getElementById("lbl_Chicken_Type").innerHTML = "Cajun";
+				document.getElementById("lbl_Chicken_Type").value = "Cajun";
 				document.getElementById("div_order_submit").style.display = "block";
 				break;
 		}
@@ -179,7 +179,7 @@ function Drink_Change()
 	{
 		case 0:
 			document.getElementById("div_Drink_Amount").style.display = "none";
-			document.getElementById("lbl_Drink_Type").innerHTML = "N/A";
+			document.getElementById("lbl_Drink_Type").value = "N/A";
 			
 			document.getElementById("div_Drink_All").style.display = "block";
 			document.getElementById("div_Drink_BocaCola").style.display = "none";
@@ -190,7 +190,7 @@ function Drink_Change()
 			break;
 		case 1:
 			document.getElementById("div_Drink_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "Boca Cola";
+			document.getElementById("lbl_Drink_Type").value = "Boca Cola";
 		
 			document.getElementById("div_Drink_All").style.display = "none";
 			document.getElementById("div_Drink_BocaCola").style.display = "block";
@@ -201,7 +201,7 @@ function Drink_Change()
 			break;
 		case 2:
 			document.getElementById("div_Drink_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "Hermano Sprint";
+			document.getElementById("lbl_Drink_Type").value = "Hermano Sprint";
 		
 			document.getElementById("div_Drink_All").style.display = "none";
 			document.getElementById("div_Drink_BocaCola").style.display = "none";
@@ -212,7 +212,7 @@ function Drink_Change()
 			break;
 		case 3:
 			document.getElementById("div_Drink_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "Dr Herman0";
+			document.getElementById("lbl_Drink_Type").value = "Dr Herman0";
 		
 			document.getElementById("div_Drink_All").style.display = "none";
 			document.getElementById("div_Drink_BocaCola").style.display = "none";
@@ -223,7 +223,7 @@ function Drink_Change()
 			break;
 		case 4:
 			document.getElementById("div_Drink_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "Mountain Pollo";
+			document.getElementById("lbl_Drink_Type").value = "Mountain Pollo";
 		
 			document.getElementById("div_Drink_All").style.display = "none";
 			document.getElementById("div_Drink_BocaCola").style.display = "none";
@@ -234,7 +234,7 @@ function Drink_Change()
 			break;
 		case 5:
 			document.getElementById("div_Drink_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "Walter Special";
+			document.getElementById("lbl_Drink_Type").value = "Walter Special";
 		
 			document.getElementById("div_Drink_All").style.display = "none";
 			document.getElementById("div_Drink_BocaCola").style.display = "none";
@@ -254,7 +254,7 @@ function Rice_Change()
 	{
 		case 0:
 			document.getElementById("div_Rice_Amount").style.display = "none";
-			document.getElementById("lbl_Drink_Type").innerHTML = "N/A";
+			document.getElementById("lbl_Rice_Type").value = "N/A";
 		
 			document.getElementById("div_Rice_All").style.display = "block";
 			document.getElementById("div_Rice_Brown").style.display = "none";
@@ -266,7 +266,7 @@ function Rice_Change()
 			break;
 		case 1:
 			document.getElementById("div_Rice_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "Brown";
+			document.getElementById("lbl_Rice_Type").value = "Brown";
 		
 			document.getElementById("div_Rice_All").style.display = "none";
 			document.getElementById("div_Rice_Brown").style.display = "block";
@@ -278,7 +278,7 @@ function Rice_Change()
 			break;
 		case 2:
 			document.getElementById("div_Rice_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "White";
+			document.getElementById("lbl_Rice_Type").value = "White";
 		
 			document.getElementById("div_Rice_All").style.display = "none";
 			document.getElementById("div_Rice_Brown").style.display = "none";
@@ -290,7 +290,7 @@ function Rice_Change()
 			break;
 		case 3:
 			document.getElementById("div_Rice_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "Black";
+			document.getElementById("lbl_Rice_Type").value = "Black";
 		
 			document.getElementById("div_Rice_All").style.display = "none";
 			document.getElementById("div_Rice_Brown").style.display = "none";
@@ -302,7 +302,7 @@ function Rice_Change()
 			break;
 		case 4:
 			document.getElementById("div_Rice_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "Bastami";
+			document.getElementById("lbl_Rice_Type").value = "Basmati";
 		
 			document.getElementById("div_Rice_All").style.display = "none";
 			document.getElementById("div_Rice_Brown").style.display = "none";
@@ -314,7 +314,7 @@ function Rice_Change()
 			break;
 		case 5:
 			document.getElementById("div_Rice_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "Fried";
+			document.getElementById("lbl_Rice_Type").value = "Fried";
 		
 			document.getElementById("div_Rice_All").style.display = "none";
 			document.getElementById("div_Rice_Brown").style.display = "none";
@@ -326,7 +326,7 @@ function Rice_Change()
 			break;
 		case 6:
 			document.getElementById("div_Rice_Amount").style.display = "block";
-			document.getElementById("lbl_Drink_Type").innerHTML = "Fried Egg";
+			document.getElementById("lbl_Rice_Type").value = "Fried Egg";
 		
 			document.getElementById("div_Rice_All").style.display = "none";
 			document.getElementById("div_Rice_Brown").style.display = "none";
@@ -347,7 +347,7 @@ function Tortilla_Change()
 	{
 		case 0:
 			document.getElementById("div_Tortilla_Amount").style.display = "none";
-			document.getElementById("lbl_Tortilla_Type").innerHTML = "N/A";
+			document.getElementById("lbl_Tortilla_Type").value = "N/A";
 			
 			document.getElementById("div_Tortilla_All").style.display = "block";
 			document.getElementById("div_Tortilla_Corn").style.display = "none";
@@ -355,7 +355,7 @@ function Tortilla_Change()
 			break;
 		case 1:
 			document.getElementById("div_Tortilla_Amount").style.display = "block";
-			document.getElementById("lbl_Tortilla_Type").innerHTML = "Corn";
+			document.getElementById("lbl_Tortilla_Type").value = "Corn";
 			
 			document.getElementById("div_Tortilla_All").style.display = "none";
 			document.getElementById("div_Tortilla_Corn").style.display = "block";
@@ -363,7 +363,7 @@ function Tortilla_Change()
 			break;
 		case 2:
 			document.getElementById("div_Tortilla_Amount").style.display = "block";
-			document.getElementById("lbl_Tortilla_Type").innerHTML = "Flour";
+			document.getElementById("lbl_Tortilla_Type").value = "Flour";
 			
 			document.getElementById("div_Tortilla_All").style.display = "none";
 			document.getElementById("div_Tortilla_Corn").style.display = "none";
@@ -380,7 +380,7 @@ function Combo_Change()
 	{
 		case 0:
 			document.getElementById("div_Combo_Amount").style.display = "none";
-			document.getElementById("lbl_Combo_Type").innerHTML = "N/A";
+			document.getElementById("lbl_Combo_Type").value = "N/A";
 		
 			document.getElementById("div_Combo_All").style.display = "block";
 			document.getElementById("div_Combo_EggFried").style.display = "none";
@@ -389,7 +389,7 @@ function Combo_Change()
 			break;
 		case 1:
 			document.getElementById("div_Combo_Amount").style.display = "block";
-			document.getElementById("lbl_Combo_Type").innerHTML = "Egg Fried Combo";
+			document.getElementById("lbl_Combo_Type").value = "Egg Fried Combo";
 		
 			document.getElementById("div_Combo_All").style.display = "none";
 			document.getElementById("div_Combo_EggFried").style.display = "block";
@@ -398,7 +398,7 @@ function Combo_Change()
 			break;
 		case 2:
 			document.getElementById("div_Combo_Amount").style.display = "block";
-			document.getElementById("lbl_Combo_Type").innerHTML = "Raw Chicken Combo";
+			document.getElementById("lbl_Combo_Type").value = "Raw Chicken Combo";
 		
 			document.getElementById("div_Combo_All").style.display = "none";
 			document.getElementById("div_Combo_EggFried").style.display = "none";
@@ -407,7 +407,7 @@ function Combo_Change()
 			break;
 		case 3:
 			document.getElementById("div_Combo_Amount").style.display = "block";
-			document.getElementById("lbl_Combo_Type").innerHTML = "Mineral Water Combo";
+			document.getElementById("lbl_Combo_Type").value = "Mineral Water Combo";
 		
 			document.getElementById("div_Combo_All").style.display = "none";
 			document.getElementById("div_Combo_EggFried").style.display = "none";

@@ -2,90 +2,82 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure consistent sizing across elements */
+    box-sizing: border-box; 
 }
 
-/* Darker background for the top and bottom sections */
 #div_order_top, #div_no_refund {
-    background-color: #8b6b61; /* Dark brown color */
+    background-color: #8b6b61; 
     color: white;
     text-align: center;
-    padding: 20px; /* Add padding for spacing */
+    padding: 20px; 
 }
 
 #div_order_top h1, #div_no_refund p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
-/* Light beige background for the center section */
 #div_order {
-    background-color: #f5f5dc; /* Light beige color */
-    padding: 20px;
+    background-color: #f5f5dc; 
+    padding: 40px;
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center; 
 }
 
-/* Full-width table with collapsed borders */
 table {
     width: 100%;
-    border-collapse: collapse; /* Collapse table borders */
+    border-collapse: collapse;
 }
 
 td {
-    padding: 10px; /* Add padding inside table cells */
-    vertical-align: top; /* Align cell content to the top */
-    text-align: center; /* Center the text */
-    height: 300px; /* Reduce the height for all cells */
+    padding: 10px; 
+    vertical-align: top; /
+    text-align: center; 
+    height: 300px; 
 }
 
-/* Center the submit button section */
 #div_order_submit {
     text-align: center;
-    margin: 20px 0; /* Add margin for spacing */
+    margin: 20px 0; 
 }
 
 #btn_Order_Submit {
-    padding: 10px 20px; /* Add padding inside the button */
-    font-size: 16px; /* Increase font size */
+    padding: 10px 20px; 
+    font-size: 16px; 
 }
 
-/* Ensure all images have the same fixed size for uniformity */
 img {
-    width: 180px;  /* Set a fixed width */
-    height: 120px; /* Reduce the fixed height */
-    object-fit: cover; /* Scale image to cover the container */
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto;
 }
 
-/* Ensure consistent height for each section */
+#div_Chicken_Amount, #div_Rice_Amount, #div_Tortilla_Amount, #div_Drink_Amount, #div_Combo_Amount,
 #div_Chicken, #div_Rice, #div_Tortilla, #div_Drink, #div_Combo {
-    height: 300px; /* Reduce the height for all sections */
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space out the elements within the section */
-    align-items: center; /* Center items horizontally */
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     box-sizing: border-box;
 }
 
-/* Fixed height for inner content to align uniformly */
 #div_Chicken_All, #div_Chicken_Raw, #div_Chicken_HotHoney, #div_Chicken_LemonPepper, #div_Chicken_GarlicParmejan, #div_Chicken_Buffalo, #div_Chicken_Cajun,
 #div_Rice_All, #div_Rice_Brown, #div_Rice_White, #div_Rice_Black, #div_Rice_Bastami, #div_Rice_Fried, #div_Rice_Egg,
 #div_Tortilla_All, #div_Tortilla_Corn, #div_Tortilla_Flour,
 #div_Drink_All, #div_Drink_BocaCola, #div_Drink_HermanoSprint, #div_Drink_DrHermano, #div_Drink_MountainPollo, #div_Drink_WalterSpecial,
 #div_Combo_All, #div_Combo_EggFried, #div_Combo_RawChicken, #div_Combo_MineralWater {
-    height: 180px; /* Reduce the height for image and text containers */
-    overflow: hidden; /* Hide overflow content */
+    height: 180px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space out the elements within the content */
+    justify-content: space-between; 
 }
 
-/* Style for specific select boxes using ID selectors */
 #cmb_chicken, #cmb_rice, #cmb_Tortilla, #cmb_Drink, #cmb_Combo {
-    width: 150px; /* Set a smaller fixed width */
-    padding: 5px; /* Add padding for spacing */
-    margin: 0 auto; /* Center the select box */
+    width: 150px; 
+    padding: 5px; 
+    margin: 0 auto; 
     display: block;
 }

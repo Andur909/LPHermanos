@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent sizing across elements */
+}
+
+/* Darker background for the top section */
+#div_order_top {
+    background-color: #8b6b61; /* Dark brown color */
+    color: white;
+    text-align: center;
+    padding: 20px; /* Add padding for spacing */
+    margin-bottom: 20px; /* Add margin below the top section */
+}
+
+#div_order_top h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Light beige background for the center section */
+#div_order {
+    background-color: #f5f5dc; /* Light beige color */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add subtle shadow */
+}
+
+/* Styles for order details */
+#div_order h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#div_order ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#div_order li {
+    margin: 10px 0; /* Add margin to list items */
+}
+
+/* Styles for total amount */
+#div_order h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the Settings button */
+button#btn_LogIn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8b6b61; /* Match the top section background */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer;
+}

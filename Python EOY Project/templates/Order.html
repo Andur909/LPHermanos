@@ -1,0 +1,247 @@
+<html>
+<head>
+    <title>Order Page</title>
+    <link rel="stylesheet" href="/static/order.css">
+    <script src="/static/Order.js"></script>
+</head>
+<body>
+	<form method="post">
+    <div id="div_order_top">
+			<h1>Welcome to the Order Page</h1>
+			<p>Here you can find all the chicken and rice you're looking for.</p>
+			<button type="submit" id="btn_settings" value="settings" name="button">Settings</button>
+    </div>
+
+    <div id="div_order">
+        <table>
+            <tr>
+                <td>
+                    <div id="div_Chicken">
+                        <h3>Select Your Chicken</h3>
+                        <select id="cmb_chicken">
+                            <option> </option>
+                            <option>RAW</option>
+                            <option>Hot Honey</option>
+                            <option>Lemon Pepper</option>
+                            <option>Garlic Parmesan</option>
+                            <option>Buffalo</option>
+                            <option>Cajun</option>
+                        </select>
+                        <div id="div_Chicken_All">
+                            <img src="All_Chicken.jpg" alt="All Chicken" id="img_AllChicken">
+                            <p>We have a large array of available chicken</p>
+                        </div>
+                        <div id="div_Chicken_Raw">
+                            <img src="Raw_Chicken.jpg" alt="Raw Chicken" id="img_RawChicken">
+                            <p>You have chosen Raw Chicken (Chicken will be sent frozen - Higher Costs)</p>
+                            <h5>Price: $6.00 per lb</h5>
+                        </div>
+                        <div id="div_Chicken_HotHoney">
+                            <img src="HotHoney_Chicken.jpg" alt="Hot Honey Chicken" id="img_HotHoneyChicken">
+                            <p>You have selected Hot Honey Chicken</p>
+                            <h5>Price: $7.50</h5>
+                        </div>
+                        <div id="div_Chicken_LemonPepper">
+                            <img src="LemonPepper_Chicken.jpg" alt="Lemon Pepper Chicken" id="img_LemonPepperChicken">
+                            <p>You have selected Lemon Pepper Chicken</p>
+                            <h5>Price: $7.50 per lb</h5>
+                        </div>
+                        <div id="div_Chicken_GarlicParmejan">
+                            <img src="GarlicParmesan_Chicken.jpg" alt="Garlic Parmesan Chicken" id="img_GarlicParmesanChicken">
+                            <p>You have selected Garlic Parmesan Chicken</p>
+                            <h5>Price: $7.50 per lb</h5>
+                        </div>
+                        <div id="div_Chicken_Buffalo">
+                            <img src="Buffalo_Chicken.jpg" alt="Buffalo Chicken" id="img_BuffaloChicken">
+                            <p>You have selected Buffalo Chicken</p>
+                            <h5>Price: $7.50 per lb</h5>
+                        </div>
+                        <div id="div_Chicken_Cajun">
+                            <img src="Cajun_Chicken.jpg" alt="Cajun Chicken" id="img_CajunChicken">
+                            <p>You have selected Cajun Chicken</p>
+                            <h5>Price: $7.50 per lb</h5>
+                        </div>
+                        <div id="div_Chicken_Amount">
+                            <input type="number" id="txt_Chicken_amount" name="txt_Chicken_Number">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div id="div_Rice">
+                        <h3>Select the Rice</h3>
+                        <select id="cmb_rice">
+                            <option> </option>
+                            <option>Brown Rice</option>
+                            <option>White Rice</option>
+                            <option>Black Rice</option>
+                            <option>Basmati Rice</option>
+                            <option>Fried Rice</option>
+                            <option>Egg Fried Rice</option>
+                        </select>
+                        <div id="div_Rice_All">
+                            <img src="All_Rice.jpg" alt="All Available Rice" id="img_AllRice">
+                            <p>We have multiple types of rice available for you to add to your chicken</p>
+                        </div>
+                        <div id="div_Rice_Brown">
+                            <img src="Brown_Rice.jpg" alt="Brown Rice" id="img_BrownRice">
+                            <p>Brown Rice is your current option</p>
+                            <h5>Price: $1.50 per lb</h5>
+                        </div>
+                        <div id="div_Rice_White">
+                            <img src="White_Rice.jpg" alt="White Rice" id="img_WhiteRice">
+                            <p>White Rice is your current choice</p>
+                            <h5>Price: $1.50 per lb</h5>
+                        </div>
+                        <div id="div_Rice_Black">
+                            <img src="Black_Rice.jpg" alt="Black Rice" id="img_BlackRice">
+                            <p>Black Rice is your choice</p>
+                            <h5>Price: $1.50 per lb</h5>
+                        </div>
+                        <div id="div_Rice_Bastami">
+                            <img src="Basmati_Rice.jpg" alt="Basmati Rice" id="img_BasmatiRice">
+                            <p>Basmati Rice is your choice</p>
+                            <h5>Price: $1.50 per lb</h5>
+                        </div>
+                        <div id="div_Rice_Fried">
+                            <img src="Fried_Rice.jpg" alt="Fried Rice" id="img_FriedRice">
+                            <p>Fried Rice is your choice</p>
+                            <h5>Price: $2.50 per lb</h5>
+                        </div>
+                        <div id="div_Rice_Egg">
+                            <img src="Egg_Fried_Rice.jpg" alt="Egg Fried Rice" id="img_EggFried">
+                            <p>Egg Fried Rice is your choice</p>
+                            <h5>Price: $3.00 per lb</h5>
+                        </div>
+                        <div id="div_Rice_Amount">
+                            <input type="number" id="txt_Rice_amount" name="txt_Rice_Number">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div id="div_Tortilla">
+                        <h3>Select your tortilla</h3>
+                        <select id="cmb_Tortilla">
+                            <option> </option>
+                            <option>Corn</option>
+                            <option>Flour</option>
+                        </select>
+                        <div id="div_Tortilla_All">
+                            <img src="All_Tortilla.jpg" alt="All Tortilla" id="img_AllTortilla">
+                            <p>We have multiple types of tortillas available for purchase</p>
+                        </div>
+                        <div id="div_Tortilla_Corn">
+                            <img src="Corn_Tortilla.jpg" alt="Corn Tortilla Image" id="img_CornTortilla">
+                            <p>You have chosen corn tortilla</p>
+                            <h5>Price: $1.20 per lb</h5>
+                        </div>
+                        <div id="div_Tortilla_Flour">
+                            <img src="Tortilla_Flour.jpg" alt="Flour Tortilla" id="img_FlourTortilla">
+                            <p>You have chosen flour tortilla</p>
+                            <h5>Price: $1.20 per lb</h5>
+                        </div>
+                        <div id="div_Tortilla_Amount">
+                            <input type="number" id="txt_Tortilla_amount" name="txt_Tortilla_Number">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div id="div_Drink">
+                        <h3>Select your Drink</h3>
+                        <select id="cmb_Drink">
+                            <option> </option>
+                            <option>Boca Cola</option>
+                            <option>Hermano Sprint</option>
+                            <option>Dr Herman0</option>
+                            <option>Mountain Pollo</option>
+                            <option>Walter's Special</option>
+                        </select>
+                        <div id="div_Drink_All">
+                            <img src="Drink_All.jpg" alt="All Drink" id="img_AllDrink">
+                            <p>We have various options of drinks for you to pick from!</p>
+                        </div>
+                        <div id="div_Drink_BocaCola">
+                            <img src="Drink_BocaCola.jpg" alt="Boca Cola" id="img_BocaCola">
+                            <p>You have chosen Boca Cola as the drink</P>
+                            <h5>Price: $11 per 6-pack can</h5>
+                        </div>
+                        <div id="div_Drink_HermanoSprint">
+                            <img src="Drink_HermanoSpirit.jpg" alt="Hermano Spirit" id="img_HermanoSpirit">
+                            <p>You have selected Hermano Spirit as the drink</p>
+                            <h5>Price: $11 per 6-pack can</h5>
+                        </div>
+                        <div id="div_Drink_DrHermano">
+                            <img src="Drink_DrHermano.jpg" alt="Dr Herman0" id="img_DrHerman0">
+                            <p>You have selected DrHerman0 as the drink</p>
+                            <h5>Price: $11 per 6-pack can</h5>
+                        </div>
+                        <div id="div_Drink_MountainPollo">
+                            <img src="Drink_MountainPollo.jpg" alt="Mountain Pollo" id="img_MountainPollo">
+                            <p>You have selected Mountain Pollo as the drink</p>
+                            <h5>Price: $11 per 6-pack can</h5>
+                        </div>
+                        <div id="div_Drink_WalterSpecial">
+                            <img src="Drink_WalterSpecial.jpg" alt="Walter Special" id="img_WalterSpecial">
+                            <p>You have selected the Special from Walter!!!</p>
+                            <h5>Price: $11 per 6-pack can</h5>
+                        </div>
+                        <div id="div_Drink_Amount">
+                            <input type="number" id="txt_Drink_amount" name="txt_Drink_Number">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div id="div_Combo">
+                        <h3>You can pick a combo</h3>
+                        <select id="cmb_Combo">
+                            <option> </option>
+                            <option>2lb Egg Fried Rice</option>
+                            <option>2lb Raw Chicken</option>
+                            <option>1 cup Mineral Water</option>
+                        </select>
+                        <div id="div_Combo_All">
+                            <img src="Combos.jpg" alt="Combos" id="img_Combos">
+                            <p>We have multiple combos for you to pick from!</p>
+                        </div>
+                        <div id="div_Combo_EggFried">
+							<img src="Combos.jpg" alt="Combos" id="img_Combos">
+                            <p>This combo includes (Add the combo list)</p>
+                            <h5>Price: $18 per combo</h5>
+                        </div>
+                        <div id="div_Combo_RawChicken">
+							<img src="Combos.jpg" alt="Combos" id="img_Combos">
+                            <p>This combo includes (Add the combo list)</p>
+                            <h5>Price: $18 per combo</h5>
+                        </div>
+                        <div id="div_Combo_MineralWater">
+							<img src="Combos.jpg" alt="Combos" id="img_Combos">
+                            <p>This combo includes (Add the combo info)</p>
+                            <h5>Price: $18 per combo</h5>
+                        </div>
+                        <div id="div_Combo_Amount">
+                            <input type="number" id="txt_Combo_amount" name="txt_Combo_Number">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_order_submit">
+        <button type="submit" id="btn_Order_Submit" value="Receipt" name="btn_Order_Receipt">Next</button>
+    </div>
+
+    <div id="div_no_refund">
+        <p>No refunds available once the order is placed.</p>
+    </div>
+
+    <div id="div_hidden">
+        <p>Contains all the info that will be given to the computer</p>
+        <label name="Chicken_Type" id="lbl_Chicken_Type"></label>
+        <label name="Rice_Type" id="lbl_Rice_Type"></label>
+        <label name="Tortilla_Type" id="lbl_Tortilla_Type"></label>
+        <label name="Drink_Type" id="lbl_Drink_Type"></label>
+        <label name="Combo_Type" id="lbl_Combo_Type"></label>
+    </div>
+	</form>
+</body>
+</html>

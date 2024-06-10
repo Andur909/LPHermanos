@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent sizing across elements */
+}
+
+/* Center the settings section */
+#div_settings {
+    background-color: #f5f5dc; /* Light beige color */
+    padding: 20px;
+    margin: 50px auto; /* Center the div horizontally */
+    width: 500px; /* Set a fixed width */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add subtle shadow */
+    text-align: left; /* Align the text to the left inside the div */
+}
+
+h1 {
+    text-align: center; /* Center the heading text */
+    color: #8b6b61; /* Match the top section background color */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px 0; /* Add margin for spacing */
+    color: #333; /* Darker text color for better readability */
+}
+
+input[type="txt"] {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Add padding for better spacing */
+    margin: 5px 0 10px 0; /* Add margin for spacing */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+
+/* Style for the submit button */
+button#btn_submit_Info, button#btn_order, button#btn_delete {
+    display: block;
+    width: 100%;
+    padding: 10px 0; /* Add padding inside the button */
+    font-size: 16px; /* Increase font size */
+    background-color: #8b6b61; /* Match the top section background */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer;
+    margin-top: 10px; /* Add margin on top for spacing */
+}
+
+button#btn_order, button#btn_delete {
+    background-color: #6f504a; /* Darken the order button for differentiation */
+}
+
+/* Error label styling */
+label#error_start {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Center the go to order button section */
+#div_goto_order {
+    text-align: center;
+    margin: 20px auto; /* Center the div horizontally */
+}
